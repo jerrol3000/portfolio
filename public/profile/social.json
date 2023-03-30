@@ -1,16 +1,16 @@
 {
-    "social": [
-        {
-            "network" : "linkedin",
-            "href": "https://linkedin.com/"
-        },
-        {
-            "network" : "github",
-            "href": "https://github.com/mayankagarwal09"
-        },
-        {
-            "network" : "email",
-            "href": "mailto:test@test.com"
-        }
-    ]
+  "social": [
+    {
+      "network": "linkedin",
+      "href": "https://linkedin.com/in/jerral-graham"
+    },
+    {
+      "network": "github",
+      "href": "https://github.com/jerrol3000"
+    },
+    {
+      "network": "email",
+      "href": "mailto:jerral.a.graham@gmail.com"
+    }
+  ]
 }

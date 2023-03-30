@@ -1,7 +1,8 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { SocialIcon } from 'react-social-icons';
-import { ThemeContext } from 'styled-components';
-import endpoints from '../constants/endpoints';
+/* eslint-disable */
+import React, { useEffect, useState, useContext } from "react";
+import { SocialIcon } from "react-social-icons";
+import { ThemeContext } from "styled-components";
+import endpoints from "../constants/endpoints";
 
 const styles = {
   iconStyle: {
@@ -17,7 +18,7 @@ function Social() {
 
   useEffect(() => {
     fetch(endpoints.social, {
-      method: 'GET',
+      method: "GET",
     })
       .then((res) => res.json())
       .then((res) => setData(res))
@@ -26,17 +27,19 @@ function Social() {
 
   return (
     <div className="social">
-      {data ? data.social.map((social) => (
-        <SocialIcon
-          key={social.network}
-          style={styles.iconStyle}
-          url={social.href}
-          network={social.network}
-          bgColor={theme.socialIconBgColor}
-          target="_blank"
-          rel="noopener"
-        />
-      )) : null}
+      {data
+        ? data.social.map((social) => (
+            <SocialIcon
+              key={social.network}
+              style={styles.iconStyle}
+              url={social.href}
+              network={social.network}
+              bgColor={theme.socialIconBgColor}
+              target="_blank"
+              rel="noopener"
+            />
+          ))
+        : null}
     </div>
   );
 }
