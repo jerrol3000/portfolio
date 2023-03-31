@@ -32,7 +32,7 @@ const styles = {
 
 function Experience({ header }) {
   const theme = useContext(ThemeContext);
-
+  const { accentColor, color, timelineLineColor } = theme;
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -51,30 +51,28 @@ function Experience({ header }) {
       {data ? (
         <div className="section-content-container">
           <Container>
-            <Timeline lineColor={theme.timelineLineColor}>
-              {data.map((item, i) => (
+            <Timeline lineColor={timelineLineColor}>
+              {data.map(({ title, dateText, subtitle, workType }, i) => (
                 <Fade key={i}>
                   <TimelineItem
-                    key={item.title + item.dateText}
-                    dateText={item.dateText}
-                    dateInnerStyle={{ background: theme.accentColor }}
+                    key={title + dateText}
+                    dateText={dateText}
+                    dateInnerStyle={{ background: accentColor }}
                     style={styles.itemStyle}
-                    bodyContainerStyle={{ color: theme.color }}
+                    bodyContainerStyle={{ color: color }}
                   >
-                    <h2 className="item-title">{item.title}</h2>
+                    <h2 className="item-title">{title}</h2>
                     <div style={styles.subtitleContainerStyle}>
                       <h4
                         style={{
                           ...styles.subtitleStyle,
-                          color: theme.accentColor,
+                          color: accentColor,
                         }}
                       >
-                        {item.subtitle}
+                        {subtitle}
                       </h4>
-                      {item.workType && (
-                        <h5 style={styles.inlineChild}>
-                          &nbsp;· {item.workType}
-                        </h5>
+                      {workType && (
+                        <h5 style={styles.inlineChild}>&nbsp;· {workType}</h5>
                       )}
                     </div>
                     <ul style={styles.ulStyle}>

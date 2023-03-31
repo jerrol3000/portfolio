@@ -27,12 +27,12 @@ function Social() {
   return (
     <div className="social">
       {data
-        ? data.social.map((social) => (
+        ? data.social.map(({ network, href }) => (
             <SocialIcon
-              key={social.network}
+              key={network}
               style={styles.iconStyle}
-              url={social.href}
-              network={social.network}
+              url={href}
+              network={network}
               bgColor={theme.socialIconBgColor}
               target="_blank"
               rel="noopener"

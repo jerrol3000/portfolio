@@ -33,6 +33,14 @@ const styles = {
 
 const ProjectCard = (props) => {
   const theme = useContext(ThemeContext);
+  const {
+    cardBorderColor,
+    cardBackground,
+    bsSecondaryVariant,
+    cardFooterBackground,
+    bsPrimaryVariant,
+    badgeStyle,
+  } = theme;
   const parseBodyText = (text) => <ReactMarkdown children={text} />;
 
   const { project } = props;
@@ -42,10 +50,10 @@ const ProjectCard = (props) => {
       <Card
         style={{
           ...styles.cardStyle,
-          backgroundColor: theme.cardBackground,
-          borderColor: theme.cardBorderColor,
+          backgroundColor: cardBackground,
+          borderColor: cardBorderColor,
         }}
-        text={theme.bsSecondaryVariant}
+        text={bsSecondaryVariant}
       >
         <Card.Img variant="top" src={project?.image} />
         <Card.Body>
@@ -60,7 +68,7 @@ const ProjectCard = (props) => {
             <Button
               key={link.href}
               style={styles.buttonStyle}
-              variant={"outline-" + theme.bsSecondaryVariant}
+              variant={"outline-" + bsSecondaryVariant}
               onClick={() => window.open(link.href, "_blank")}
             >
               {link.text}
@@ -68,14 +76,14 @@ const ProjectCard = (props) => {
           ))}
         </Card.Body>
         {project.tags && (
-          <Card.Footer style={{ backgroundColor: theme.cardFooterBackground }}>
+          <Card.Footer style={{ backgroundColor: cardFooterBackground }}>
             {project.tags.map((tag) => (
               <Badge
                 key={tag}
                 pill
-                bg={theme.bsSecondaryVariant}
-                text={theme.bsPrimaryVariant}
-                style={styles.badgeStyle}
+                bg={bsSecondaryVariant}
+                text={bsPrimaryVariant}
+                style={badgeStyle}
               >
                 {tag}
               </Badge>
