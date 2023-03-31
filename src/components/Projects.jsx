@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import React, { useState, useEffect, useContext } from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import { ThemeContext } from "styled-components";

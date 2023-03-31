@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import React, { useEffect, useState, useContext } from "react";
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 import { Container } from "react-bootstrap";
@@ -54,8 +52,8 @@ function Experience({ header }) {
         <div className="section-content-container">
           <Container>
             <Timeline lineColor={theme.timelineLineColor}>
-              {data.map((item) => (
-                <Fade>
+              {data.map((item, i) => (
+                <Fade key={i}>
                   <TimelineItem
                     key={item.title + item.dateText}
                     dateText={item.dateText}

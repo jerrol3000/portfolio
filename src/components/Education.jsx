@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useEffect, useState, useContext } from "react";
 import { Chrono } from "react-chrono";
 import { Container } from "react-bootstrap";
