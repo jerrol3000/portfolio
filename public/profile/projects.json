@@ -16,6 +16,7 @@
       ],
       "tags": ["React", "Portfolio", "JavaScript"]
     },
+
     {
       "image": "images/projects/sticker.png",
       "title": "Sticker Farm - e-commerce",
@@ -46,7 +47,7 @@
           "href": "https://master--comfy-mooncake-cbe2f9.netlify.app/"
         }
       ],
-      "tags": ["React", "Portfolio", "JavaScript, MUI"]
+      "tags": ["React", "Portfolio", "JavaScript, MUI, CSS"]
     }
   ]
 }
