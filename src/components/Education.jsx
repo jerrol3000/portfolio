@@ -56,7 +56,7 @@ function Education({ header }) {
                 items={data.education}
                 cardHeight={250}
                 mode={mode}
-                theme={theme}
+                // theme={theme}
               >
                 <div className="chrono-icons">
                   {data.education.map((education) =>
