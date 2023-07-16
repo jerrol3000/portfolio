@@ -17,7 +17,7 @@ const styles = {
   },
 };
 
-const Publication = (props) => {
+const Publications = (props) => {
   const theme = useContext(ThemeContext);
   const { bsSecondaryVariant } = theme;
   const { header } = props;
@@ -25,7 +25,7 @@ const Publication = (props) => {
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
-    fetch(endpoints.projects, {
+    fetch(endpoints.publication, {
       method: "GET",
     })
       .then((res) => res.json())
@@ -33,6 +33,7 @@ const Publication = (props) => {
       .catch((err) => err);
   }, []);
   const numberOfItems = showMore && data ? data.length : 6;
+  console.log("publications", data);
   return (
     <>
       <Header title={header} />
@@ -40,9 +41,9 @@ const Publication = (props) => {
         <div className="section-content-container">
           <Container style={styles.containerStyle}>
             <Row xs={1} sm={1} md={2} lg={3} className="g-4">
-              {data.projects?.slice(0, numberOfItems).map((project) => (
-                <Fade key={project.title}>
-                  <ProjectCard project={project} />
+              {data.publications?.slice(0, numberOfItems).map((publication) => (
+                <Fade key={publication.title}>
+                  <ProjectCard project={publication} />
                 </Fade>
               ))}
             </Row>
@@ -65,8 +66,8 @@ const Publication = (props) => {
   );
 };
 
-Projects.propTypes = {
+Publications.propTypes = {
   header: PropTypes.string.isRequired,
 };
 
-export default Publication;
+export default Publications;

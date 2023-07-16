@@ -33,6 +33,7 @@ const Projects = (props) => {
       .catch((err) => err);
   }, []);
   const numberOfItems = showMore && data ? data.length : 6;
+
   return (
     <>
       <Header title={header} />

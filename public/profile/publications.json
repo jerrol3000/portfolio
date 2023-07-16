@@ -1,0 +1,34 @@
+{
+  "publications": [
+    {
+      "image": "images/publication/chatApp.png",
+      "title": "Build a Simple Chat App in Minutes with Socket.io and React: A Step-by-Step Guide for JavaScript & React Developers",
+      "links": [
+        {
+          "text": "Read",
+          "href": "https://medium.com/@jerrolbrown321/build-a-simple-chat-app-in-minutes-with-socket-io-a214c048e79"
+        }
+      ]
+    },
+    {
+      "image": "images/publication/redux.png",
+      "title": "Death to Redux, long live Redux/ToolKit!",
+      "links": [
+        {
+          "text": "Read",
+          "href": "https://medium.com/@jerrolbrown321/death-to-redux-long-live-redux-toolkit-9ce70af56bff"
+        }
+      ]
+    },
+    {
+      "image": "images/publication/5tips.png",
+      "title": "5 Tips for Writing Clean and Readable Code in React: A Guide to Functional Components",
+      "links": [
+        {
+          "text": "Read",
+          "href": "https://medium.com/@jerrolbrown321/5-tips-for-writing-clean-and-readable-code-in-react-a-guide-to-functional-components-fc041c130928"
+        }
+      ]
+    }
+  ]
+}
