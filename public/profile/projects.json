@@ -19,7 +19,7 @@
     {
       "image": "images/projects/sticker.png",
       "title": "Sticker Farm - e-commerce",
-      "bodyText": "-A ecomerce app that allow users to upload stickers and labels idea to be created and delivered.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **render** using.",
+      "bodyText": "-A ecomerce app that allow users to upload stickers and labels idea to be created and delivered.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **render**, initial load may take a few minutes.",
       "links": [
         {
           "text": "GitHub",
