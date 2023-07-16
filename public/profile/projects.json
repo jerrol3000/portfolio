@@ -31,6 +31,22 @@
         }
       ],
       "tags": ["Semantic ui", "PostgrSQL", "Express", "React", "Node"]
+    },
+    {
+      "image": "images/projects/trivia.png",
+      "title": "Triavial Game",
+      "bodyText": "- The Trivia Wheel is designed to spin and randomly select a category, generating a question along with multiple answer options from that particular category.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/jerrol3000/Triavial-wheel"
+        },
+        {
+          "text": "Live",
+          "href": "https://master--comfy-mooncake-cbe2f9.netlify.app/"
+        }
+      ],
+      "tags": ["React", "Portfolio", "JavaScript, MUI"]
     }
   ]
 }

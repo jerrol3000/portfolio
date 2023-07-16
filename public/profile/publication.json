@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "image": "images/projects/portfolio-poster.png",
+      "title": "Build a Simple Chat App in Minutes with Socket.io and React: A Step-by-Step Guide for JavaScript & React Developers",
+      "links": [
+        {
+          "text": "Medium",
+          "href": "https://medium.com/@jerrolbrown321/build-a-simple-chat-app-in-minutes-with-socket-io-a214c048e79"
+        },
+        {
+          "text": "Live",
+          "href": "https://dev-portfolio-2o3c.vercel.app/"
+        }
+      ]
+    }
+  ]
+}
