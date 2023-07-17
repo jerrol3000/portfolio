@@ -35,7 +35,7 @@
     },
     {
       "image": "images/projects/trivia.png",
-      "title": "Triavial Game",
+      "title": "Trivia Game",
       "bodyText": "- The Trivia Wheel is designed to spin and randomly select a category, generating a question along with multiple answer options from that particular category.",
       "links": [
         {
