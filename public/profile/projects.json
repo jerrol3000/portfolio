@@ -16,6 +16,30 @@
       ],
       "tags": ["React", "Portfolio", "JavaScript"]
     },
+    {
+      "image": "images/projects/workflo.png",
+      "title": "Trivia Game",
+      "bodyText": "- A sophisticated project management application designed to streamline teamwork and foster seamless real-time communication among team members.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/CapstoneH-2209FA/WorkFlo"
+        },
+        {
+          "text": "Live",
+          "href": "https://workflo-lk9c.onrender.com/"
+        }
+      ],
+      "tags": [
+        "React",
+        "react-beautiful-dnd",
+        "JavaScript",
+        "MUI",
+        "CSS",
+        "socket.io",
+        "react-canvas-draw"
+      ]
+    },
 
     {
       "image": "images/projects/sticker.png",
