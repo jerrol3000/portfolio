@@ -19,7 +19,7 @@
     {
       "image": "images/projects/workflo.png",
       "title": "WorkFlo",
-      "bodyText": "- A sophisticated project management application designed to streamline teamwork and foster seamless real-time communication among team members.",
+      "bodyText": "- A sophisticated project management application designed to streamline teamwork.  \n - Drag and drop feature.\n - Foster seamless real-time communication among team members.",
       "links": [
         {
           "text": "GitHub",
